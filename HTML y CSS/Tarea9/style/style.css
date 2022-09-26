@@ -1,0 +1,29 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.btn-modern {
+  padding: 1em;
+  font-weight: 600;
+  color: antiquewhite;
+  background-color: lightgreen;
+  border-radius: 5px;
+  border: 1px solid lightgreen;
+  transition: all 0.4s;
+}
+
+.btn-modern:hover {
+  color: aliceblue;
+  background-color: aqua;
+  box-shadow: 0 0.1em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+  border: 1px solid aqua;
+  transform: translateY(-5px);
+}

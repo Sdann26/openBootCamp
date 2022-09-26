@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  flex-grow: 1;
+  background-color: azure;
+}
+
+.box {
+  background-color: burlywood;
+  width: 80%;
+  height: 30%;
+}
+
+main {
+  min-height: 100vh;
+  flex-grow: 5;
+  background-color: antiquewhite;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: auto;
+    height: 20vh;
+    background-color: azure;
+  }
+
+  .box {
+    width: 30%;
+    height: 80%;
+  }
+
+  main {
+    min-height: 80vh;
+    flex-grow: 0;
+  }
+}

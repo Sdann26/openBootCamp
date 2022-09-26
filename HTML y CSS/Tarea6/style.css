@@ -1,0 +1,24 @@
+#boton-prueba {
+  width: 12em;
+  padding: 1em;
+  border: 2px solid green;
+  background-color: white;
+  color: green;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 250ms, background 250ms;
+}
+
+#boton-prueba:hover {
+  background-color: green;
+  color: white;
+}
+
+#boton-prueba::after {
+  content: "Pasa por encima";
+  font-weight: 600;
+}
+
+#boton-prueba:hover::after {
+  content: "¡Hecho!";
+}

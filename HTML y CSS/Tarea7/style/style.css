@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background-color: #161717;
+}
+
+main {
+  width: 100%;
+  max-width: 540px;
+  margin: auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+input {
+  color: white;
+  font-weight: 500;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  background-color: #212121;
+  font: inherit;
+  outline: none;
+  transition: all 200ms;
+}
+
+input:hover {
+  background-color: #454045;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+hr {
+  width: calc(50% - 20px);
+  color: #fff;
+  opacity: 0.5;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-register-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+#btn-google {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.2em;
+  background-color: #4385f5;
+  border: 2px solid #4385f5;
+  color: #fff;
+  font-weight: 600;
+}
+
+#btn-google i {
+  display: grid;
+  place-content: center;
+  width: 2em;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+#btn-google span {
+  margin-right: 0.5em;
+}
+
+#btn-twitter {
+  display: grid;
+  place-content: center;
+  background-color: #00acee;
+}
+
+.fa-google {
+  color: #4385f5;
+}
+
+.fa-twitter {
+  color: #fff;
+}
+
+i .fab.fa-google {
+  padding-right: 1em;
+}
+
+.form-separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__submit {
+  padding: 0.85em;
+  color: #fff;
+  background-color: hsl(338, 51%, 46%);
+  font-weight: 600;
+  transition: background 200ms;
+}
+
+.form__submit:hover {
+  background-color: hsl(338, 61%, 61%);
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-two-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.form-two-inputs span {
+  display: block;
+}
+
+.form__check {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__check input {
+  accent-color: hsl(338, 51%, 46%);
+}

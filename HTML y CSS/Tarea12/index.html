@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Elementos de Interés en Bootstrap</title>
+  </head>
+  <body>
+    <main
+      class="container py-5 d-flex flex-column justify-content-center align-items-center gap-5"
+    >
+      <section class="bg-light">
+        <div class="container-fluid p-5">
+          <h1 class="display-5 fw-bold fs-1">Bienvenido al ultimo ejercicio</h1>
+          <p class="col-md-8 fs-5 text-black-50">
+            Para la resolución del presente ejercicio tendremos que realizar una
+            página con tres componentes principales: Un Jumbotron, un formulario
+            y una card.
+          </p>
+          <button
+            class="btn btn-outline-primary btn-md"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#miModal"
+          >
+            Ver más
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="miModal"
+            tabindex="-1"
+            aria-labelledby="ejemplo para modal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal de Ejemplo
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Este es un modal de prueba para la resolución del ejercicio
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Guardar cambios
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-75 d-flex flex-column justify-content-center">
+        <form class="">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="telefono" />
+          </div>
+          <div class="mb-3 form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Deja aquí un comentario"
+              id="mensaje"
+              style="height: 100px"
+            ></textarea>
+            <label for="mensaje">Deja aquí un comentario</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
+      <section>
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://scontent.flim2-2.fna.fbcdn.net/v/t1.18169-9/13335930_1079457285455951_6703791153377763699_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Lr0mlFSLjrcAX86BZxG&_nc_ht=scontent.flim2-2.fna&oh=00_AT9FEYFzU5ro2cd-7blV-wtsfLXX6vAvF_4rZgsp5VuJ5Q&oe=62F5E78D"
+            class="card-img-top"
+            alt="foto de perfil"
+          />
+          <div class="card-body">
+            <h1 class="card-title fs-4">Israel Danilo Blas Salas</h1>
+            <p class="card-text">
+              Desarrollador frontend con 2 años de experiencia y con afinidad en
+              el diseño UI/UX.
+            </p>
+          </div>
+          <div class="card-footer">Correo electrónico: sdann26@gmail.com</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
